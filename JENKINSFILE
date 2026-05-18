@@ -3,14 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Get Code') {
-            steps {
-                echo "===== STAGE 1: GET CODE ====="
-                git branch: 'master',
-                    url: 'https://github.com/Farithcarrillo/unir-cp-1-2'
-                bat 'dir'
-            }
-        }
 
         stage('Unit') {
             steps {
